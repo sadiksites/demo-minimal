@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="kk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>«Балапан» — Минимал (демо)</title><link rel="icon" href="logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#2bb3a3;--teal-d:#1f7d73;--yel:#f6c343;--ink:#2a2f33;--mut:#7a8288;--line:#ebe7df;--bg:#fcfbf8;--side:260px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.75 Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg)}img{display:block;max-width:100%}a{color:var(--teal-d)}
+aside{position:fixed;inset:0 auto 0 0;width:var(--side);border-right:1px solid var(--line);padding:36px 28px;display:flex;flex-direction:column;gap:28px;background:var(--bg);z-index:20}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}.logo img{width:40px;height:40px}.logo b{font:600 19px Lora,serif;display:block;line-height:1.1}.logo small{color:var(--mut);font-size:13px}
+nav{display:flex;flex-direction:column;gap:2px}nav a{text-decoration:none;color:var(--mut);padding:6px 0 6px 14px;border-left:2px solid transparent;font-weight:500}nav a.on,nav a:hover{color:var(--ink);border-color:var(--teal)}
+.lang{display:flex;gap:14px}.lang button{border:0;background:none;padding:0 0 2px;font:600 14px Inter,sans-serif;color:var(--mut);cursor:pointer;border-bottom:2px solid transparent}.lang [aria-pressed=true]{color:var(--ink);border-color:var(--yel)}
+.side-foot{margin-top:auto;font-size:12px;color:var(--mut)}
+main{margin-left:var(--side)}.sec{max-width:760px;padding:96px 56px;border-bottom:1px solid var(--line)}
+h1{font:500 clamp(34px,5vw,56px)/1.1 Lora,serif;margin:0 0 20px}h2{font:500 32px/1.2 Lora,serif;margin:0 0 28px}.k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);font-weight:600;margin-bottom:10px}
+.lead{font-size:19px;color:var(--mut)}.hero img{border-radius:6px;margin-top:40px;aspect-ratio:16/8;object-fit:cover;width:100%}
+.btn{display:inline-block;margin:10px 18px 0 0;font-weight:600;text-decoration:none;border-bottom:2px solid var(--yel)}
+ul.l{list-style:none;padding:0;margin:0}ul.l li{display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:18px 0;border-top:1px solid var(--line)}ul.l li>*:not(:first-child){grid-column:2}
+.fi,.ge{font-size:24px;grid-row:span 3}.av{grid-row:span 2;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:13px;font-weight:600;color:var(--teal-d)}ul.l span{color:var(--mut)}
+.g li{grid-template-columns:44px 1fr}.g .ge{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:color-mix(in srgb,var(--c) 22%,white);font-size:20px}
+.nws article{display:grid;grid-template-columns:140px 1fr;gap:22px;padding:22px 0;border-top:1px solid var(--line)}.nws img{aspect-ratio:1;object-fit:cover;border-radius:4px}.nws time{font-size:13px;color:var(--mut)}.nws h3{font:500 21px Lora,serif;margin:2px 0 4px}.nws p{margin:0;color:var(--mut)}
+.dcs li{display:flex;justify-content:space-between;padding:14px 0;border-top:1px solid var(--line)}.dcs a{text-decoration:none;color:var(--ink)}.dcs small{color:var(--mut)}
+.sym{display:flex;gap:40px;flex-wrap:wrap;list-style:none;padding:0}.sym li{display:flex;flex-direction:column;gap:8px}.sym svg{width:80px;height:54px}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 28px}dt{color:var(--mut)}dd{margin:0}.note{font-size:13px;color:var(--mut)}
+.top{display:none}
+@media(max-width:900px){aside{transform:translateX(-100%);transition:.25s;width:min(300px,85vw);box-shadow:0 0 40px rgba(0,0,0,.1)}.open aside{transform:none}main{margin:0}.sec{padding:64px 22px}
+.top{display:flex;position:sticky;top:0;z-index:15;align-items:center;justify-content:space-between;gap:10px;padding:10px 18px;background:rgba(252,251,248,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}.top button.m{border:0;background:none;font:600 15px Inter,sans-serif;cursor:pointer;padding:8px 0}
+.nws article{grid-template-columns:90px 1fr;gap:14px}}
+</style></head><body>
+<div class="top"><a class="logo" href="#top"><img src="logo.svg" alt=""><b data-t="brand"></b></a><span class="lang-m"></span><button class="m" id="mb" data-t="menu"></button></div>
+<aside><a class="logo" href="#top"><img src="logo.svg" alt=""><span><b data-t="brand"></b><small data-t="sub"></small></span></a><nav id="nav"></nav><span class="lang-s"></span><div class="side-foot" data-t="demo"></div></aside>
+<main id="top">
+<section class="sec hero"><div class="k" data-t="demo"></div><h1 data-t="heroT"></h1><p class="lead" data-t="heroL"></p><a class="btn" href="https://wa.me/77000000000" data-t="wa"></a><a class="btn" href="tel:+77000000000" data-t="call"></a><img src="yard.jpg" alt=""></section>
+<section class="sec" id="about"><div class="k">01</div><h2 data-n="about"></h2><p data-t="aboutP"></p><ul class="l" id="feats"></ul></section>
+<section class="sec" id="groups"><div class="k">02</div><h2 data-n="groups"></h2><ul class="l g" id="grp"></ul></section>
+<section class="sec" id="staff"><div class="k">03</div><h2 data-n="staff"></h2><ul class="l" id="stf"></ul></section>
+<section class="sec" id="news"><div class="k">04</div><h2 data-n="news"></h2><div class="nws" id="nws"></div></section>
+<section class="sec" id="docs"><div class="k">05</div><h2 data-n="docs"></h2><ul class="l dcs" id="dcs"></ul><p class="note" data-t="docsNote"></p></section>
+<section class="sec" id="symbols"><div class="k">06</div><h2 data-t="symT"></h2><ul class="sym" id="sym"></ul></section>
+<section class="sec" id="contacts"><div class="k">07</div><h2 data-n="contacts"></h2><div id="cnt"></div><p class="note" data-t="foot"></p></section>
+</main>
+<script src="data.js"></script><script src="render.js"></script><script>
+const $=id=>document.getElementById(id),R=document.documentElement;
+window.render=()=>{S.i18n();document.querySelectorAll('[data-n]').forEach(e=>e.textContent=S.title(e.dataset.n));$('nav').innerHTML=S.nav();document.querySelector('.lang-s').innerHTML=document.querySelector('.lang-m').innerHTML=S.lang();$('feats').innerHTML=S.feats();$('grp').innerHTML=S.groups();$('stf').innerHTML=S.staff();$('nws').innerHTML=S.news();$('dcs').innerHTML=S.docs();$('sym').innerHTML=S.sym();$('cnt').innerHTML=S.contacts();document.title=T('heroT')+' — демо';spy()};
+function spy(){let c='';document.querySelectorAll('section[id]').forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.4)c=s.id});document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+c))}
+render();addEventListener('scroll',spy,{passive:true});$('mb').onclick=()=>R.classList.toggle('open');$('nav').onclick=()=>R.classList.remove('open');
+</script></body></html>
